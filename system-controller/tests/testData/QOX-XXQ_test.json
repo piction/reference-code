@@ -1,0 +1,13 @@
+{
+    "id":"configTest",
+    "config": [
+      { "type": "Q" },
+      { "type": "O", "length": 0 },
+      { "type": "X", "length": 1990, "pn": "0628253", "serial": "0000000000001" },
+      { "type": "-" },
+      { "type": "X", "length": 1990, "pn": "0628253", "serial": "0000000000002" },
+      { "type": "X", "length": 1990, "pn": "0628253", "serial": "0000000000003" },
+      { "type": "Q" }
+    ]
+}
+  

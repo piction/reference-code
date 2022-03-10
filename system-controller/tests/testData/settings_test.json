@@ -1,0 +1,45 @@
+{
+    "id": "configTest",
+
+    "systemsettings": {
+        "chicanoverlap": 101,
+        "chicanzone": 602,
+        "slowdowndist": 203,
+        "cornerzone": 104,
+        "oppositezone": 105,
+        "triggerpushwingdistance": 306
+    },
+    "config": [
+        {
+            "type": "Q"
+        },
+        {
+            "type": "O",
+            "length": 0
+        },
+        {
+            "type": "X",
+            "length": 1990,
+            "pn": "0628253",
+            "serial": "0000000000001"
+        },
+        {
+            "type": "-"
+        },
+        {
+            "type": "X",
+            "length": 1990,
+            "pn": "0628253",
+            "serial": "0000000000002"
+        },
+        {
+            "type": "X",
+            "length": 1990,
+            "pn": "0628253",
+            "serial": "0000000000003"
+        },
+        {
+            "type": "Q"
+        }
+    ]
+}

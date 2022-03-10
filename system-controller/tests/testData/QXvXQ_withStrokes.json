@@ -1,0 +1,28 @@
+{
+    "id":"configTest",
+    "config": [
+        {
+            "type": "Q"
+        },        
+        {
+            "type": "X",          
+            "length": 1990,
+            "stroke":1990,
+            "pn": "0628253",
+            "serial": "0000000000001"            
+        },
+        {
+            "type": "v"
+        },
+        {
+            "type": "X",
+            "length": 1990,
+            "stroke":1990,
+            "pn": "0628253",
+            "serial": "0000000000002"            
+        },
+        {
+            "type": "Q"
+        }
+    ]
+}
