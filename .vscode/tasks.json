@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/debug"
+    },
+    "tasks": [
+        {
+            "label": "cmake-build",
+            "type": "shell",
+            "command": "cmake DCMAKE_CXX_FLAGS=-Wall  -DENABLE_TESTS=ON -DCMAKE_BUILD_TYPE=Debug ..",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "make-build",
+            "type": "shell",
+            "command": "make -j 4 ",
+            "dependsOn": "cmake-build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+    
+    ]
+}
+

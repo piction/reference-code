@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [       
+       
+        {
+            "name": "Debug-main",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/systemController",
+            "args": ["-p", "19", "-c", "../example-config-json.json","-l","bogus/bogus" ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug-tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/tests/systemControllerTests", 
+            "args": ["--gtest_filter=systemSettingsParser.canParseAllSettings"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug/tests",
+            "environment": [],
+            "externalConsole": false,            
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Debug-ALL-tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/tests/systemControllerTests",            
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/debug/tests",
+            "environment": [],
+            "externalConsole": false,            
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
